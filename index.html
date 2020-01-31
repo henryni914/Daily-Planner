@@ -247,8 +247,9 @@
       getEvents();
       function colorRow() {
         for (var i = 0; i < 9; i++) {
-          var currentHour = 12; //this was used to test if the function is working properly
-          // var currentHour = parseInt(moment().format("H")); //this will be used in the final submission
+          // var currentHour = 12; //this was used to test if the function is working properly
+          var currentHour = parseInt(moment().format("H")); //this will be used in the final submission
+          console.log(currentHour);
           var plannerHour = $(".form-control");
           var testHour = parseInt(plannerHour[i].getAttribute("value"));
           if (testHour < currentHour) {
@@ -292,6 +293,17 @@
         // console.log(a);
         localStorage.setItem(buttonVal, JSON.stringify(a));
       });
+      function getEvents() {
+        var form = document.querySelectorAll(".form-control");
+        for (let i = 0; i < 9; i++) {
+          var getEvent = JSON.parse(localStorage.getItem(i));
+          if (getEvent == "") {
+            form[i].value = "";
+          } else form[i].value = i;
+          form[i].value = getEvent;
+          getEvent = "";
+        }
+      }
     </script>
   </body>
 </html>
