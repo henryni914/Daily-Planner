@@ -4,7 +4,7 @@ Link: https://henryni914.github.io/Daily-Planner/
 
 # Purpose
 
-This daily planner was created for users who would like to map out the events, meetings, or other functions that happen in their daily lives. The website allows users to input their schedule and to be able to open it at anytime with their daily schedule saved. The hourly blocks are also color coordinated to show hours that have passed (gray), the current hour (red), or time that has not yet passed (green).
+This daily planner was created for users who would like to map out the events, meetings, or other functions that happen throughout their daily lives. The website allows users to input their schedule and to be able to open it at anytime with their daily schedule saved. The hourly blocks are also color coordinated to show hours that have passed (gray), the current hour (red), or time that has not yet passed (green).
 
 # Technologies used
 
