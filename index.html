@@ -1,157 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Work Day Scheduler</title>
-</head>
-
-<body>
-  <header class="jumbotron">
-    <h1 class="display-3">Work Day Scheduler</h1>
-    <p class="lead">A simple calendar app for scheduling your work day</p>
-    <p id="currentDay" class="lead"></p>
-  </header>
-  <div class="container">
-    <!-- Timeblocks go here -->
-    <div class="row">
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <div class="input-group-text" id="inputGroup-sizing-lg 9">9 AM</div>
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here -->
+      <div class="row">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text" id="inputGroup-sizing-lg 9">9 AM</div>
+          </div>
+          <textarea
+            class="form-control"
+            aria-label="With textarea"
+            value="9"
+          ></textarea>
+          <div class="input-group-append">
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+              value="0"
+            >
+              Button
+            </button>
+          </div>
         </div>
-        <textarea class="form-control" aria-label="With textarea" value="9"></textarea>
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+      </div>
+
+      <div class="row">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text" id="inputGroup-sizing-lg">10 AM</div>
+          </div>
+          <textarea
+            class="form-control"
+            aria-label="With textarea"
+            value="10"
+          ></textarea>
+          <div class="input-group-append">
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+              value="1"
+            >
+              Button
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text" id="inputGroup-sizing-lg">11 AM</div>
+          </div>
+          <textarea
+            class="form-control"
+            aria-label="With textarea"
+            value="11"
+          ></textarea>
+          <div class="input-group-append">
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+              value="2"
+            >
+              Button
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text" id="inputGroup-sizing-lg">12 PM</div>
+          </div>
+          <textarea
+            class="form-control"
+            aria-label="With textarea"
+            value="12"
+          ></textarea>
+          <div class="input-group-append">
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+              value="3"
+            >
+              Button
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text" id="inputGroup-sizing-lg">1 PM</div>
+          </div>
+          <textarea
+            class="form-control"
+            aria-label="With textarea"
+            value="13"
+          ></textarea>
+          <div class="input-group-append">
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+              value="4"
+            >
+              Button
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text" id="inputGroup-sizing-lg">2 PM</div>
+          </div>
+          <textarea
+            class="form-control"
+            aria-label="With textarea"
+            value="14"
+          ></textarea>
+          <div class="input-group-append">
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+              value="5"
+            >
+              Button
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text" id="inputGroup-sizing-lg">3 PM</div>
+          </div>
+          <textarea
+            class="form-control"
+            aria-label="With textarea"
+            value="15"
+          ></textarea>
+          <div class="input-group-append">
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+              value="6"
+            >
+              Button
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text" id="inputGroup-sizing-lg">4 PM</div>
+          </div>
+          <textarea
+            class="form-control"
+            aria-label="With textarea"
+            value="16"
+          ></textarea>
+          <div class="input-group-append">
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+              value="7"
+            >
+              Button
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text" id="inputGroup-sizing-lg">5 PM</div>
+          </div>
+          <textarea
+            class="form-control"
+            aria-label="With textarea"
+            value="17"
+          ></textarea>
+          <div class="input-group-append">
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+              value="8"
+            >
+              Button
+            </button>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <div class="input-group-text" id="inputGroup-sizing-lg">10 AM</div>
-        </div>
-        <textarea class="form-control" aria-label="With textarea" value="10"></textarea>
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <div class="input-group-text" id="inputGroup-sizing-lg">11 AM</div>
-        </div>
-        <textarea class="form-control" aria-label="With textarea" value="11"></textarea>
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <div class="input-group-text" id="inputGroup-sizing-lg">12 PM</div>
-        </div>
-        <textarea class="form-control" aria-label="With textarea" value="12"></textarea>
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <div class="input-group-text" id="inputGroup-sizing-lg">1 PM</div>
-        </div>
-        <textarea class="form-control" aria-label="With textarea" value="13"></textarea>
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <div class="input-group-text" id="inputGroup-sizing-lg">2 PM</div>
-        </div>
-        <textarea class="form-control" aria-label="With textarea" value="14"></textarea>
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <div class="input-group-text" id="inputGroup-sizing-lg">3 PM</div>
-        </div>
-        <textarea class="form-control" aria-label="With textarea" value="15"></textarea>
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <div class="input-group-text" id="inputGroup-sizing-lg">4 PM</div>
-        </div>
-        <textarea class="form-control" aria-label="With textarea" value="16"></textarea>
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <div class="input-group-text" id="inputGroup-sizing-lg">5 PM</div>
-        </div>
-        <textarea class="form-control" aria-label="With textarea" value="17"></textarea>
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  <script>
-    var i = 0;
-    var date = moment().format("dddd, MMMM Do");
-    $("#currentDay").text(date);
-    console.log(date);
-    colorRow();
-    function colorRow() {
-      for (var i = 0; i < 9; i++) {
-        var currentHour = 12
-        // var currentHour = parseInt(moment().format("H"));
-        var plannerHour = $(".form-control");
-        var testHour = parseInt(plannerHour[i].getAttribute("value"));
-        if (testHour < currentHour) {
-          plannerHour[i].style.backgroundColor = "red";
-          console.log("testHour is: " + testHour + "currentHour is: " + currentHour + "plannerHour[i] is: " + i);
-        } else if (testHour == currentHour) {
-          plannerHour[i].style.backgroundColor = "green";
-          console.log("testHour is: " + testHour + "currentHour is: " + currentHour + "plannerHour[i] is: " + plannerHour);
-        } else if (testHour > currentHour) {
-          plannerHour[i].style.backgroundColor = "grey";
-          console.log("testHour is: " + testHour + "currentHour is: " + currentHour + "plannerHour[i] is: " + plannerHour);
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script>
+      var date = moment().format("dddd, MMMM Do");
+      $("#currentDay").text(date);
+      // console.log(date);
+      colorRow();
+      getEvents();
+      function colorRow() {
+        for (var i = 0; i < 9; i++) {
+          var currentHour = 12; //this was used to test if the function is working properly
+          // var currentHour = parseInt(moment().format("H")); //this will be used in the final submission
+          var plannerHour = $(".form-control");
+          var testHour = parseInt(plannerHour[i].getAttribute("value"));
+          if (testHour < currentHour) {
+            plannerHour[i].style.backgroundColor = "#708090";
+            // console.log("testHour is: " + testHour + " currentHour is: " + currentHour + " plannerHour[i] is: " + i);
+          } else if (testHour == currentHour) {
+            plannerHour[i].style.backgroundColor = "#CD5C5C";
+            // console.log("testHour is: " + testHour + " currentHour is: " + currentHour + " plannerHour[i] is: " + i);
+          } else if (testHour > currentHour) {
+            plannerHour[i].style.backgroundColor = "#3CB371";
+            // console.log("testHour is: " + testHour + " currentHour is: " + currentHour + " plannerHour[i] is: " + i);
+          }
         }
       }
       // var currentHour = parseInt(moment().format("H"));
@@ -161,8 +270,28 @@
       // var testValue2 = document.getElementsByClassName("form-control")[8].getAttribute("value"); //returns value 17 (5pm)
       // console.log(testValue2);
       // plannerHour[1].style.backgroundColor = "red"; (THIS CHANGES BACKGROUND OF 10AM TO RED)
-    }
-  </script>
-</body>
 
+      $(".btn").on("click", function() {
+        // var thisValue = $(".btn").attr("value"); //don't know why this isnt working
+
+        var a = [];
+        // console.log("In array a: " + a);
+        // // a = JSON.parse(localStorage.getItem('events'));
+        // // // console.log("After parse array a: " + a)
+        // console.log("After splice, array a: " + a);
+        //  a.splice(buttonVal, 1, thisRow);
+        // console.log(a);
+        var buttonVal = this.value;
+        // console.log("Button value = " + buttonVal);
+        var form = document.querySelectorAll(".form-control");
+        // console.log("Query select all forms: " + form);
+        var thisRow = form[buttonVal].value;
+        // console.log("thisRow is: " + thisRow);
+        // a.splice(buttonVal, 1, thisRow);
+        a.push(thisRow);
+        // console.log(a);
+        localStorage.setItem(buttonVal, JSON.stringify(a));
+      });
+    </script>
+  </body>
 </html>
