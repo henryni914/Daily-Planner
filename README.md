@@ -16,6 +16,7 @@ This daily planner was created for users who would like to map out the events, m
     <li> Moment.js </li>
     <li> Google APIs </li>
     <li> Font Awesome </li>
+    <li> Bootstrap </li>
 </ul>
 
 # Features
